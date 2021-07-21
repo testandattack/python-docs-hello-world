@@ -60,4 +60,3 @@ jobs:
           app-name: 'RtxSmash-PodOne-Python'
           slot-name: 'production'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_d5005cd572be49e0bad27870ddd622a0 }}
-          startup-command: 'parser.py'
