@@ -61,9 +61,9 @@ def parse():
 @app.route("/parser")
 def process():
     # set CORS headers
-    # response.headers['Access-Control-Allow-Origin'] = '*'
-    # response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, OPTIONS'
-    # response.headers['Access-Control-Allow-Headers'] = 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token'
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token'
     response.content_type = 'application/json'
     data = parse()
     return dumps(data)
