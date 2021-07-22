@@ -58,7 +58,7 @@ def parse():
     table_content.append(json_2019)
     return table_content
 
-@route('/parser',method = 'GET')
+@app.route("/parser")
 def process():
     # set CORS headers
     response.headers['Access-Control-Allow-Origin'] = '*'
